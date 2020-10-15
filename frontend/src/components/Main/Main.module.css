@@ -1,0 +1,15 @@
+.MainContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.MainContent > div {
+    margin: 10px 0;
+    padding-left: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
