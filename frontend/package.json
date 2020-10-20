@@ -9,10 +9,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "plotly.js": "^1.57.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-plotly.js": "^2.5.0",
     "react-scripts": "3.4.3",
-    "react-socket-io": "^0.2.5",
+    "react-webcam-barcode-scanner": "0.0.2-rc2",
     "socket.io-client": "^2.3.1"
   },
   "scripts": {
@@ -20,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prebuild": "rm -rf ../backend/templates/index.html && rm -rf ../backend/static/build",
-    "postbuild": "mv build/index.html ../backend/templates/ &&  mv build ../backend/static/"
+    "prebuild": "rmdir /s/q ..\\backend\\static && mkdir ..\\backend\\static\\build && del /q ..\\backend\\templates\\index.html",
+    "postbuild": "xcopy /s .\\build ..\\backend\\static\\build && xcopy .\\build\\index.html ..\\backend\\templates"
   },
   "eslintConfig": {
     "extends": "react-app"
