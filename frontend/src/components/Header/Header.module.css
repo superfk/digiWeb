@@ -1,0 +1,20 @@
+.HeaderBar {
+    height: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(140,211,255);
+background: linear-gradient(90deg, rgba(140,211,255,1) 31%, rgba(0,117,190,1) 100%);
+    color: rgb(247, 245, 245);
+    padding: 10px 0;
+}
+.Logo{
+    height: 50%;
+    padding: 0 20px;
+}
+
+.Title{
+    padding: 0 20px;
+    font-size: smaller;
+}

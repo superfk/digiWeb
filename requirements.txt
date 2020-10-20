@@ -1,0 +1,6 @@
+flask==1.1.2
+flask_cors
+Flask-SocketIO
+eventlet
+pyserial
+pythoncrc==1.21
